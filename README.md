@@ -4,7 +4,7 @@ A full grocery app system using Mongodb, FastAPI, and TkInter.
 
 ## About
 
-This project started as a way for me learn new skills with API development, specifically with a NoSQL datastore like mongodb, as well as proper GUI application development in contrast to the web based applications in familliar with.<br>
+This project started as a way for me learn new skills with API development, specifically with a NoSQL datastore like mongodb, as well as proper GUI application development in contrast to the web based applications in which I am familliar.<br>
 The whole application is written using Python for familiarity and simplicity, which means performance may be lacking compared to lower level languages, however, I intend to build this application with scale and efficiency at the forefront.
 
 ### Application Stack
