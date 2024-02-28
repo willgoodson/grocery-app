@@ -1,0 +1,22 @@
+services:
+  api:
+    build: ./api
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
